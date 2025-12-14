@@ -1,0 +1,59 @@
+{
+    "args": {
+        "export_dir": "/home/user/datasets",
+        "num_classes": 30,
+        "samples_per_class": 1414,
+        "random_seed": 42,
+        "num_workers": 8,
+        "iter_batch_size": 1000,
+        "calculate_normalization_constants": true,
+        "calculate_dataset_resolution": true,
+        "normalization_resize_dim": 224
+    },
+    "num_augments": 0,
+    "mean": [
+        0.4769901499302409,
+        0.45251829834094914,
+        0.42458887169071213
+    ],
+    "std": [
+        0.22442610230923277,
+        0.2199105363025781,
+        0.22288820151569944
+    ],
+    "avg_width": 961.6152522395097,
+    "avg_height": 800.0974304573315,
+    "num_samples": 42420,
+    "classes": {
+        "Toy": 1414,
+        "Footwear": 1414,
+        "Car": 1414,
+        "Poster": 1414,
+        "Tree": 1414,
+        "Sculpture": 1414,
+        "Auto part": 1414,
+        "Person": 1414,
+        "Dog": 1414,
+        "Window": 1414,
+        "Bird": 1414,
+        "House": 1414,
+        "Tower": 1414,
+        "Mobile phone": 1414,
+        "Vehicle": 1414,
+        "Airplane": 1414,
+        "Book": 1414,
+        "Furniture": 1414,
+        "Flag": 1414,
+        "Flower": 1414,
+        "Fashion accessory": 1414,
+        "Clothing": 1414,
+        "Food": 1414,
+        "Street light": 1414,
+        "Camera": 1414,
+        "Animal": 1414,
+        "Building": 1414,
+        "Plant": 1414,
+        "Human face": 1414,
+        "Door": 1414
+    }
+}

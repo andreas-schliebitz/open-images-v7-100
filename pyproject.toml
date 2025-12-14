@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "open-images-v7-100"
+version = "0.1.0"
+description = "Generate the OpenImagesV7-100 image classification dataset."
+authors = [
+    "Andreas Schliebitz <a.schliebitz@hs-osnabrueck.de>",
+    "Heiko Tapken <h.tapken@hs-osnabrueck.de>",
+    "Martin Atzmueller <martin.atzmueller@uni-osnabrueck.de>",
+]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{ include = "open_images_v7_100" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fiftyone = "1.11.0"
+torchvision = "0.24.1"
+python-dotenv = "1.2.1"
+scikit-learn = "1.8.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "9.0.1"
+black = "25.11.0"
+
+[tool.pytest.ini_options]
+addopts = "-s"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,21 @@
+cff-version: "1.2.0"
+message: "If you use this software in your work, please cite this GitHub repository."
+title: "The OpenImagesV7-100 Dataset"
+authors:
+  - family-names: "Schliebitz"
+    given-names: "Andreas"
+  - family-names: "Tapken"
+    given-names: "Heiko"
+  - family-names: "Atzmueller"
+    given-names: "Martin"
+date-released: "2025-12-14"
+version: "0.1.0"
+repository-code: "https://github.com/andreas-schliebitz/open-images-v7-100"
+abstract: |
+  This image classification dataset is a subset of Google's latest Open Images V7 dataset (600 classes, ~1.9 mio. annotated samples) consisting of 100 randomly sampled classes with exactly 345 samples each. Using our PyTorch compatible dataset class implementation, each training sample can be augmented an arbitrary amount of times using AutoAugment (Cubuk et al.). Selecting num_augments=3 will yield a train split comparable to ImageNet100 in size. No augmentations are applied by default. We also publish normalization vectors (RGB mean and standard deviation) for our dataset as well as other metadata like average image resolution and class names.
+keywords:
+  - image classification
+  - image dataset
+  - Open Images V7
+  - machine learning
+license: "Apache-2.0"
