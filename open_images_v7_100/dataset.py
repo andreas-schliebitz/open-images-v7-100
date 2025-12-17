@@ -89,15 +89,16 @@ class OpenImagesV7(Dataset):
 
         match self.split:
             case "train":
-                dataset_split = Subset(dataset, train_indices)
+                split_indices = train_indices
             case "val":
-                dataset_split = Subset(dataset, val_indices)
+                split_indices = val_indices
             case "test":
-                dataset_split = Subset(dataset, test_indices)
+                split_indices = test_indices
             case _:
                 raise ValueError(f"Unsupported split '{self.split}'.")
 
-        split_indices = dataset_split.indices
+        split_indices = split_indices.tolist()
+        dataset_split = Subset(dataset=dataset, indices=split_indices)
         split_targets = targets[split_indices]
 
         num_classes_full = np.unique(targets).size
