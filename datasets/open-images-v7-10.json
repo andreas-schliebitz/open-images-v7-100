@@ -1,0 +1,39 @@
+{
+    "args": {
+        "export_dir": "/home/user/datasets",
+        "num_classes": 10,
+        "samples_per_class": 4073,
+        "random_seed": 42,
+        "num_workers": 8,
+        "iter_batch_size": 1000,
+        "calculate_normalization_constants": true,
+        "calculate_dataset_resolution": true,
+        "normalization_resize_dim": 224
+    },
+    "num_augments": 0,
+    "mean": [
+        0.469870618255237,
+        0.4432481742997557,
+        0.40592981404819667
+    ],
+    "std": [
+        0.22683076640561473,
+        0.22199117574076382,
+        0.22932429568658097
+    ],
+    "avg_width": 971.7826663393076,
+    "avg_height": 790.4862018168426,
+    "num_samples": 40730,
+    "classes": {
+        "Food": 4073,
+        "Plant": 4073,
+        "Flower": 4073,
+        "Toy": 4073,
+        "Vehicle": 4073,
+        "Person": 4073,
+        "Window": 4073,
+        "Building": 4073,
+        "Tree": 4073,
+        "Clothing": 4073
+    }
+}
